@@ -1,0 +1,52 @@
+@media screen and (max-width: 768px) {
+    .logo{
+        font-size: 15px;
+        margin: 0 2vmax;
+    }
+    .hamburger{
+        display: block;
+        margin-right: 20px;
+        cursor: pointer;
+        padding: 10px;
+    }
+    .menu{
+        display: none;
+    }
+    .mobile-menu{
+        display: none;
+    }
+    .mobile-menu a{
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        margin: 10px 0;
+        font-weight: 600;
+    }
+    .show{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: rgb(235, 235, 235);
+        top: 9svh;
+        width: 100svw;
+        height: 40svh;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-heading h1{
+        font-size: 40px;
+    }
+    .main-heading a{
+        font-size: 15px;
+    }
+    .copyright{
+        font-size: 10px;
+    }
+    .social-media{
+        font-size: 10px;
+    }
+    .social-media > i{
+        margin: 5px 2px;
+    }
+  }

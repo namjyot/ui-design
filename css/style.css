@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Mulish:wght@200;300;400;500;600;700;800;900;1000&family=Ubuntu:wght@300;400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap'); */
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif; */
+/* font-family: 'Ubuntu', sans-serif; */
+/* font-family: 'Mulish', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+    box-sizing: border-box;
+}
+body::before{
+    content: "";
+    position: absolute;
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0px; 
+    left: 0px; 
+    width: 100svw; 
+    height: 100svh; 
+    z-index: -100;
+    opacity: .5;
+}
+body{
+    background-color: black;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(124, 124, 124, 0.404);
+}
+.logo{
+    margin: 0 4vmax;
+}
+.hamburger{
+    display: none;
+}
+#x{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+.menu{
+    margin: 0 3vmax;
+    display: flex;
+    align-items: center;
+}
+.menu > a{
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-size: 12px;
+    font-weight: 900;
+    padding: 5px 5px;
+    margin: 0 10px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    transition: all .3s;
+}
+.menu a:hover{
+    border-bottom: 2px solid rgb(51,125,100);
+}
+.contact{
+    background-color: rgb(163,235,209);
+    margin-left: 2vmax;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+.contact > span{
+    
+    padding: 8px 12px;
+    color: rgb(51,125,100);
+
+}
+.menu > a > svg{
+    margin-left: 10px;
+}
+.main-heading{
+    margin-top: 20svh;
+    margin-left: 10svw;
+}
+
+.main-heading h1{
+    color: rgb(255, 255, 255);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.main-heading > a{
+    text-decoration: none;
+    position: relative;
+    top: 6svh;
+    color: rgb(255, 255, 255);
+    padding-bottom: 5px;
+    border-bottom: 3px solid green;
+    cursor: pointer;
+}
+.main-heading > a > svg{
+    position: relative;
+    top: 8px;
+}
+
+.footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100svw;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright{
+    margin: 10px;
+    font-size: 12px;
+    color: rgb(107, 107, 107);
+}
+.social-media, .copyright{
+    margin: 0 20px;
+}
+.social-media > i{
+    margin: 5px 5px;
+    cursor: pointer;
+}
